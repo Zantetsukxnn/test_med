@@ -20,7 +20,7 @@ function Navbar() {
       {/* A span element for styling purposes */}
     </div>
     {/* Navigation icon section with an onClick event listener */}
-    <div className="nav__icon" onclick="{handleClick}">
+    <div className="nav__icon" onClick="{handleClick}">
       {/* Font Awesome icon for bars (hamburger menu) */}
       <i className="fa fa-times fa fa-bars" />
     </div>
@@ -28,7 +28,7 @@ function Navbar() {
     <ul className="nav__links active">
       {/* List item for the 'Home' link */}
       <li className="link">
-        <a href="../Landing_Page/LandingPage.html">Home</a>
+        <a href="/">Home</a>
       </li>
       {/* List item for the 'Appointments' link */}
       <li className="link">
@@ -36,13 +36,13 @@ function Navbar() {
       </li>
       {/* List item for the 'Sign Up' link with a button */}
       <li className="link">
-        <a href="../Sign_Up/Sign_Up.html">
+        <a href="/Components/Sign_Up/Sign_Up.html">
           <button className="btn1">Sign Up</button>
         </a>
       </li>
       {/* List item for the 'Login' link with a button */}
       <li className="link">
-        <a href="../Login/Login.html">
+        <a href="/Components/Login/Login.html">
           <button className="btn1">Login</button>
         </a>
       </li>
