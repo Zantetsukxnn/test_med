@@ -36,14 +36,14 @@ function Sign_Up() {
           {" "}
           {/* Form group for user's name */}
           <label htmlFor="name">Name</label> {/* Label for name input field */}
-          <input
+          <input required
             type="text"
             name="name"
             id="name"
-            required=""
             className="form-control"
             placeholder="Enter your name"
             aria-describedby="helpId"
+            
           />{" "}
           {/* Text input field for name */}
         </div>
@@ -52,12 +52,12 @@ function Sign_Up() {
           {/* Form group for user's phone number */}
           <label htmlFor="phone">Phone</label>{" "}
           {/* Label for phone input field */}
-          <input
+          <input required
             type="tel"
             name="phone"
             id="phone"
-            required=""
             className="form-control"
+            pattern="^\d{10}$"
             placeholder="Enter your phone number"
             aria-describedby="helpId"
           />{" "}
@@ -68,11 +68,10 @@ function Sign_Up() {
           {/* Form group for user's email */}
           <label htmlFor="email">Email</label>{" "}
           {/* Label for email input field */}
-          <input
+          <input required
             type="email"
             name="email"
             id="email"
-            required=""
             className="form-control"
             placeholder="Enter your email"
             aria-describedby="helpId"
@@ -84,10 +83,9 @@ function Sign_Up() {
           {/* Form group for user's password */}
           <label htmlFor="password">Password</label>{" "}
           {/* Label for password input field */}
-          <input
+          <input required
             name="password"
             id="password"
-            required=""
             className="form-control"
             placeholder="Enter your password"
             aria-describedby="helpId"

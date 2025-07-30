@@ -29,7 +29,7 @@ function Login() {
           {/* Form group for email input */}
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input
+            <input required
               type="email"
               name="email"
               id="email"
@@ -41,7 +41,7 @@ function Login() {
           {/* Form group for password input */}
           <div className="form-group">
             <label htmlFor="password">Password</label>
-            <input
+            <input required
               type="password"
               name="password"
               id="password"
