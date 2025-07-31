@@ -58,15 +58,15 @@ const AppointmentForm = ({ doctorName, doctorSpeciality, onSubmit }) => {
             value={appTime}
             onChange={(e) => setAppTime(e.target.value)}
             required>
-    <option value="9:00">9:00am</option>
-    <option value="10:00">10:00am</option>
-    <option value="11:00">11:00am</option>
-    <option value="12:00">12:00am</option>
-    <option value="1:00">1:00pm</option>
-    <option value="2:00">2:00pm</option>
-    <option value="3:00">3:00pm</option>
-    <option value="4:00">4:00pm</option>
-    <option value="5:00">5:00pm</option>
+    <option value="9:00am">9:00am</option>
+    <option value="10:00am">10:00am</option>
+    <option value="11:00am">11:00am</option>
+    <option value="12:00pm">12:00pm</option>
+    <option value="1:00pm">1:00pm</option>
+    <option value="2:00pm">2:00pm</option>
+    <option value="3:00pm">3:00pm</option>
+    <option value="4:00pm">4:00pm</option>
+    <option value="5:00pm">5:00pm</option>
   </select>
         </div>
         <button type="submit">Book Now</button>
