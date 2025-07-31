@@ -11,6 +11,7 @@ import Sign_Up from './Components/Sign_Up/Sign_Up';
 import Login from './Components/Login/Login';
 import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation'; 
 import FindDoctorSearch from './Components/FindDoctorSearch/FindDoctorSearch';
+import BookingConsultation from './Components/BookingConsultation';
 // Function component for the main App
 function App() {
   // Render the main App component
@@ -20,7 +21,7 @@ function App() {
         <BrowserRouter>
           {/* Display the Navbar component */}
           <Navbar/>
-          <InstantConsultation/>
+          <BookingConsultation/>
           
 
           {/* Set up the Routes for different pages */}
@@ -31,7 +32,7 @@ function App() {
             <Route path="/Components/Sign_Up/Sign_Up.html" element={<Sign_Up/>}/>
             <Route path="/Components/InstantConsultationBooking/InstantConsultation" element={<InstantConsultation />} />
             <Route path="/Components/Login/Login.html" element={<Login/>}/>
-            <Route path="/Components/FindDoctorSearch/FindDoctorSearch.js" element={<FindDoctorSearch/>}/>
+            <Route path="/Components/BookingConsultation" element={<BookingConsultation/>}/>
           </Routes>
         </BrowserRouter>
     </div>
