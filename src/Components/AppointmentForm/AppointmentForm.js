@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 const AppointmentForm = ({ doctorName, doctorSpeciality, onSubmit }) => {
     const [name, setName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
-    const [appDate, setappDate] = useState('');
-    const [appTime, setappTime] = useState('');
+    const [appDate, setAppDate] = useState('');
+    const [appTime, setAppTime] = useState('');
     const [selectedSlot, setSelectedSlot] = useState(null);
   
     const handleSlotSelection = (slot) => {
@@ -12,10 +12,12 @@ const AppointmentForm = ({ doctorName, doctorSpeciality, onSubmit }) => {
     };
   
     const handleFormSubmit = (e) => {
-      e.preventDefault();
-      onSubmit({ name, phoneNumber });
-      setName('');
-      setPhoneNumber('');
+        e.preventDefault();
+        onSubmit({ name, phoneNumber, appDate, appTime });
+        setName('');
+        setPhoneNumber('');
+        setAppDate('');
+        setAppTime('');
     };
   
     return (
@@ -40,13 +42,13 @@ const AppointmentForm = ({ doctorName, doctorSpeciality, onSubmit }) => {
             required
           />
         </div>
-         <div className="form-group">
+        <div className="form-group">
           <label htmlFor="date">Date of Appointment:</label>
           <input
             type="date"
             id="appDate"
             value={appDate}
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => setAppDate(e.target.value)}
             required
           />
         </div>
@@ -54,20 +56,19 @@ const AppointmentForm = ({ doctorName, doctorSpeciality, onSubmit }) => {
           <label htmlFor="time">Book Time Slot:</label>
     <select name="appTime" id="appTime" 
             value={appTime}
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => setAppTime(e.target.value)}
             required>
     <option value="9:00">9:00am</option>
     <option value="10:00">10:00am</option>
     <option value="11:00">11:00am</option>
-    <option value="12:00>12:00<am/option>
-
-mp
-mp2    <option value="3:00">3pm:00</option>
+    <option value="12:00">12:00am</option>
+    <option value="1:00">1:00pm</option>
+    <option value="2:00">2:00pm</option>
+    <option value="3:00">3:00pm</option>
     <option value="4:00">4:00pm</option>
     <option value="5:00">5:00pm</option>
-    <option value="12:00">12:00</option>    <option value="12:00">12:00</option>
   </select>
-        </div>
+        </div>        </div>
         <button type="submit">Book Now</button>
       </form>
     );

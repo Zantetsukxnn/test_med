@@ -20,6 +20,7 @@ function App() {
         <BrowserRouter>
           {/* Display the Navbar component */}
           <Navbar/>
+          <InstantConsultation/>
           
 
           {/* Set up the Routes for different pages */}
