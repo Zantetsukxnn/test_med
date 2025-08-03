@@ -24,6 +24,7 @@ function App() {
           {/* Display the Navbar component */}
           <Navbar/>
           {/*<BookingConsultation/>*/}
+          {/*<ReviewForm/>*/}
           
 
           {/* Set up the Routes for different pages */}
@@ -35,6 +36,7 @@ function App() {
             <Route path="/Components/InstantConsultationBooking/InstantConsultation" element={<InstantConsultation />} />
             <Route path="/Components/Login/Login.html" element={<Login/>}/>
             <Route path="/Components/BookingConsultation" element={<BookingConsultation/>}/>
+            <Route path="/Components/ReviewForm/ReviewForm" element={<ReviewForm/>}/>
           </Routes>
         </BrowserRouter>
     </div>

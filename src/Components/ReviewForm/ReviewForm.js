@@ -1,5 +1,6 @@
 // Following code has been commented with appropriate comments for your reference.
 import React, { useState } from 'react';
+import "./ReviewForm.css";
 
 // Function component for giving reviews
 function GiveReviews() {
@@ -42,7 +43,7 @@ function GiveReviews() {
   };
 
   return (
-    <div>
+    <div className="page">
       <h2>Form with Message</h2>
       {!showForm ? (
         // Display button to open the form
@@ -62,7 +63,9 @@ function GiveReviews() {
             <textarea id="review" name="review" value={formData.review} onChange={handleChange} />
           </div>
           {/* Submit button for form submission */}
+         
           <button type="submit">Submit</button>
+          
         </form>
       )}
       {/* Display the submitted message if available */}
