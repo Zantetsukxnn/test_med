@@ -62,7 +62,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li className="link">
-          <Link to="/Components/FindDoctorSearch/FindDoctorSearch.js">Appointments</Link>
+          <Link to="/Components/BookingConsultation">Appointments</Link>
         </li>
         <li className="link">
           <Link to="/healthblog">Health Blog</Link>
