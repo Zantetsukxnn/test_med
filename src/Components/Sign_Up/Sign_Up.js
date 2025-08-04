@@ -19,7 +19,7 @@ const Sign_Up = () => {
         e.preventDefault(); // Prevent default form submission
 
         // API Call to register user
-        const response = await fetch("https://ambert0130-8181.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/api/auth/register", {
+        const response = await fetch(`${API_URL}/api/auth/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
