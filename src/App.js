@@ -24,7 +24,7 @@ function App() {
         <BrowserRouter>
           {/* Display the Navbar component */}
           <Navbar/>
-          <BookingConsultation/>
+           {/*<BookingConsultation/>*/}
           {/*<ProfileCard/>*/}
           
 
