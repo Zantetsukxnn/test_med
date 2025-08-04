@@ -13,6 +13,7 @@ import InstantConsultation from './Components/InstantConsultationBooking/Instant
 import BookingConsultation from './Components/BookingConsultation';
 import Notification from './Components/Notification/Notification';
 import ReviewForm from './Components/ReviewForm/ReviewForm';
+import ProfileCard from './Components/ProfileCard/ProfileCard';
 
 // Function component for the main App
 function App() {
@@ -24,7 +25,7 @@ function App() {
           {/* Display the Navbar component */}
           <Navbar/>
           {/*<BookingConsultation/>*/}
-          {/*<ReviewForm/>*/}
+          {/*<ProfileCard/>*/}
           
 
           {/* Set up the Routes for different pages */}

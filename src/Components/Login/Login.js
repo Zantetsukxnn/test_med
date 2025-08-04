@@ -95,7 +95,7 @@ const Login = () => {
                 <label htmlFor="password">Password</label>
                 <input 
                   value={password} 
-                  onChange={(e) => setEmail(e.target.value)} 
+                  onChange={(e) => setPassword(e.target.value)} 
                   type="password" 
                   name="password" 
                   id="password" 

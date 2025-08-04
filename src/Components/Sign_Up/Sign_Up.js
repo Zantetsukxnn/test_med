@@ -19,7 +19,7 @@ const Sign_Up = () => {
         e.preventDefault(); // Prevent default form submission
 
         // API Call to register user
-        const response = await fetch(`"https://ambert0130-8181.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/"/api/auth/register`, {
+        const response = await fetch("https://ambert0130-8181.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/api/auth/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -89,7 +89,7 @@ const Sign_Up = () => {
        </div>
        <div className="form-group">
            <label htmlFor="password">Password</label>
-           <input value={password} onChange={(e) => setPassword(e.target.value)} name="password" id="password" className="form-control" placeholder="Enter your password" aria-describedby="helpId" />
+           <input type = "password" value={password} onChange={(e) => setPassword(e.target.value)} name="password" id="password" className="form-control" placeholder="Enter your password" aria-describedby="helpId" />
        </div>
 
        <div className="btn-group">
